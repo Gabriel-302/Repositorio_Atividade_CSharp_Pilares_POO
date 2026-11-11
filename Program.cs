@@ -49,17 +49,17 @@
 
 //* 5. Sistema de cálculo de frete
 
-List<Entrega> entregas = new List<Entrega>();
+// List<Entrega> entregas = new List<Entrega>();
 
-entregas.Add(new EntregaExpressa());
-entregas.Add(new EntregaEconomica());
-entregas.Add(new RetiradaLocal());
+// entregas.Add(new EntregaExpressa());
+// entregas.Add(new EntregaEconomica());
+// entregas.Add(new RetiradaLocal());
 
 
-foreach (var entrega in entregas)
-{
-    entrega.CalcularFrete(10);
-}
+// foreach (var entrega in entregas)
+// {
+//     entrega.CalcularFrete(10);
+// }
 
 //* 6. Sistema de documentos
 
@@ -70,3 +70,49 @@ foreach (var entrega in entregas)
 // Contrato contrato = new Contrato();
 // contrato.Imprimir();
 //! contrato.Exportar(); // Contrato não tem o método Exportar da interface IExportavel
+
+//* 7. Sistema de equipamentos
+
+// Notebook notebook = new Notebook("G15", 123456, 16);
+// notebook.ExibirInformacoes();
+
+// Smartphone smartphone = new Smartphone("iPhone 13", 987654, 128);
+// smartphone.ExibirInformacoes(); 
+
+// * 8. Sistema de animais
+
+// List<Animal> animais = new List<Animal>();
+
+// animais.Add(new Cachorro("Rex"));
+// animais.Add(new Gato("Mingau"));
+// animais.Add(new Passaro("Pardal"));
+
+// foreach (var animal in animais)
+// {
+//     animal.Apresentar();
+//     animal.EmitirSom();
+// }
+
+//* 9. Sistema de armazenamento
+
+// IArmazenavel armazenavel = new ArquivoTexto();
+// armazenavel.Salvar("Conteúdo do arquivo de texto");
+// armazenavel.Ler();
+
+// IArmazenavel armazenavel1 = new BancoDados();
+// armazenavel1.Salvar("Conteúdo do banco de dados");
+// armazenavel1.Ler();
+
+//* 10. Sistema de serviços
+
+// IContratavel hospedagem = new Hospedagem();
+// hospedagem.Contratar();
+
+// IContratavel consultoria = new Consultoria();
+// consultoria.Contratar();
+
+// ICancelavel cancelavel = new Hospedagem();
+// cancelavel.Cancelar();
+
+//! ICancelavel cancelavel1 = new Consultoria();
+//! cancelavel1.Cancelar(); // Erro: Consultoria não funciona porque não implementa a interface ICancelavel
