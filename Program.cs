@@ -49,17 +49,17 @@
 
 //* 5. Sistema de cálculo de frete
 
-// List<Entrega> entregas = new List<Entrega>
-// {
-//     new EntregaEconomica(),
-//     new EntregaExpressa(),
-//     new RetiradaLocal()
-// };
+List<Entrega> entregas = new List<Entrega>();
 
-// foreach (var entrega in entregas)
-// {
-//     entrega.CalcularFrete(10);
-// }
+entregas.Add(new EntregaExpressa());
+entregas.Add(new EntregaEconomica());
+entregas.Add(new RetiradaLocal());
+
+
+foreach (var entrega in entregas)
+{
+    entrega.CalcularFrete(10);
+}
 
 //* 6. Sistema de documentos
 
